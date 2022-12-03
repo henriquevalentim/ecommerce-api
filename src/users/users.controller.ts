@@ -25,6 +25,11 @@ export class UsersController {
     return this.usersService.findAll();
   }
 
+  @Get('/test')
+  test() {
+    return { teste: 'teste' };
+  }
+
   @Post('/login')
   login() {
     return this.usersService.findAll();
