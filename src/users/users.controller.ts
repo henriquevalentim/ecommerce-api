@@ -27,7 +27,7 @@ export class UsersController {
 
   @Get('/test')
   test() {
-    return { teste: 'teste' };
+    return { teste: 'testee' };
   }
 
   @Post('/login')
