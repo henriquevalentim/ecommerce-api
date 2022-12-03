@@ -12,6 +12,18 @@ export class User {
   name: string;
 
   @Prop()
+  genre: string;
+
+  @Prop({ type: Date, required: false })
+  birthday: Date;
+
+  @Prop()
+  cpf: string;
+
+  @Prop()
+  telephone: string;
+
+  @Prop()
   password: string;
 }
 
