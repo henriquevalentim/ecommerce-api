@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const whitelist = [
     'http://localhost:4200',
-    'https://marketplace-fjlozgftn-cintiasilva7300.vercel.app',
+    'https://marketplace-938mzbps4-cintiasilva7300.vercel.app/',
   ];
   app.enableCors({
     origin: whitelist,
