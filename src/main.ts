@@ -7,6 +7,7 @@ async function bootstrap() {
     'http://localhost:4200',
     'https://marketplace-ten-sooty.vercel.app',
     'http://marketplace-ten-sooty.vercel.app',
+    '76.76.21.142',
   ];
   app.enableCors({
     origin: whitelist,
