@@ -3,14 +3,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const whitelist = [
-    'http://localhost:4200',
-    'https://marketplace-ten-sooty.vercel.app',
-    'http://marketplace-ten-sooty.vercel.app',
-    '76.76.21.142',
-  ];
+
   app.enableCors({
-    origin: whitelist,
+    origin: true,
     methods: ['GET', 'POST', 'DELETE', 'PATCH'],
     credentials: true,
   });
